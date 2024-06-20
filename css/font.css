@@ -1,29 +1,4 @@
-@font-face {
- font-family: 'Pretendard';
- font-weight: 700;
- src: url(../fonts/Pretendard-Bold.eot);
- src: url(../fonts/Pretendard-Bold.eot?#iefix) format('embedded-opentype'),
-      url(../fonts/Pretendard-Bold.woff) format('woff'),
-      url(../fonts/Pretendard-Bold.ttf) format('truetype');
-}
 
-@font-face {
- font-family: 'Pretendard';
- font-weight: 600;
- src: url(../fonts/Pretendard-SemiBold.eot);
- src: url(../fonts/Pretendard-SemiBold.eot?#iefix) format('embedded-opentype'),
-      url(../fonts/Pretendard-SemiBold.woff) format('woff'),
-      url(../fonts/Pretendard-SemiBold.ttf) format('truetype');
-}
-
-@font-face {
- font-family: 'Pretendard';
- font-weight: 500;
- src: url(../fonts/Pretendard-Medium.eot);
- src: url(../fonts/Pretendard-Medium.eot?#iefix) format('embedded-opentype'),
-      url(../fonts/Pretendard-Medium.woff) format('woff'),
-      url(../fonts/Pretendard-Medium.ttf) format('truetype');
-}
 
 @font-face {
       font-family: 'Noto Sans KR';

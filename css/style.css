@@ -27,13 +27,13 @@ html {
 }
 
 .f-en {
-  font-family: arboria, sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-weight: 500;
   letter-spacing: 0!important;
 }
 
 .small-tit {
-  font-family: arboria, sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   color: #DDDDDD;
   margin-bottom: 24px;
   font-size: 18px;
@@ -250,7 +250,7 @@ br.br640on {
 #header .logo .logo-img {
   width: 257px;
   height: 68px;
-  background-image: url(../img/logo-header.svg);
+  background-image: url(../img/logo-m\(30\).svg);
   background-size: cover;
   background-position: top;
   transition: width .5s ease .2s,
@@ -384,11 +384,11 @@ br.br640on {
   #header .logo {
     position: static;
   }
-
+/*
   #header .logo p {
     display: none;
   }
-
+*/
   #header .logo .logo-img {
     width: 112px;
     height: 30px;
@@ -936,7 +936,7 @@ br.br640on {
 
 .main02 .keyword .content-right.tit-box .subtit {
   font-size: 40px;
-  color: #9C81D4;
+  color: #fff;
 }
 
 @media (max-width: 768px) {
@@ -1078,6 +1078,7 @@ br.br640on {
   opacity: 1;
 }
 
+
 @media (max-width: 768px) {
   .main02 .keyword .brand li p {
     font-size: 18px;
@@ -1145,21 +1146,27 @@ br.br640on {
   font-weight: 700;
 }
 
+@media (max-width: 1200px) {
+  .main02 .slogan .content-left.tit-box .subtit {
+    font-size: 26px;
+  }
+}
+
 @media (max-width: 960px) {
   .main02 .slogan .content-left.tit-box .subtit {
-    font-size: 30px;
+    font-size: 26px;
   }
 }
 
 @media (max-width: 768px) {
   .main02 .slogan .content-left.tit-box .subtit {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 
 @media (max-width: 768px) {
   .main02 .slogan .content-right p {
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 24px;
   }
 }
@@ -1318,7 +1325,7 @@ br.br640on {
 
 .main02 .benefit-list .benefit-detail li {
   position: relative;
-  padding-left: 3%;
+  /*padding-left: 3%;*/
 }
 
 .main02 .benefit-list .benefit-detail li p {
@@ -1346,7 +1353,7 @@ br.br640on {
 }
 
 .main02 .benefit-list .tit span {
-  color: #6740BC;
+  color: #fff;
   font-weight: 400;
   display: block;
   font-size: 18px;
@@ -1363,9 +1370,10 @@ br.br640on {
 .main02 .benefit-list .benefit-detail {
   padding-top: 36px;
   margin-top: 24px;
-  border-top: 2px solid #6740BC;
+  border-top: 1px solid #fff;
 }
 
+/*
 .main02 .benefit-list .benefit-detail li:before {
   content: "·";
   position: absolute;
@@ -1373,6 +1381,7 @@ br.br640on {
   left: 0;
   color: #F9F3E9;
 }
+  */
 
 .main02 .benefit-list .benefit-detail li + li {
   margin-top: 10px;
