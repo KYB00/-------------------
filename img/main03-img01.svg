@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="51.13" height="56" viewBox="0 0 51.13 56">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_66" data-name="사각형 66" width="51.13" height="56" fill="none" stroke="#26a6cc" stroke-width="2"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_484" data-name="그룹 484" transform="translate(-0.5 -0.182)">
+    <g id="그룹_43" data-name="그룹 43" transform="translate(0.5 0.182)" clip-path="url(#clip-path)">
+      <path id="패스_182" data-name="패스 182" d="M24.63,4.182h3.652c1.706,0,2.435.729,2.435,2.435v8.522a14.609,14.609,0,0,1-29.217,0V6.616c0-1.706,1.948-2.435,3.652-2.435H7.587" transform="translate(-0.283 0.688)" fill="none" stroke="#26a6cc" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="패스_183" data-name="패스 183" d="M42.717,25.182V33.7a14.609,14.609,0,1,1-29.217,0V25.182" transform="translate(2.326 5.253)" fill="none" stroke="#26a6cc" stroke-miterlimit="10" stroke-width="2"/>
+      <line id="선_1" data-name="선 1" y2="6.087" transform="translate(7.304 1.217)" fill="none" stroke="#26a6cc" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <line id="선_2" data-name="선 2" y2="6.087" transform="translate(24.348 1.217)" fill="none" stroke="#26a6cc" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <circle id="타원_7" data-name="타원 7" cx="4.261" cy="4.261" r="4.261" transform="translate(41.391 21.913)" fill="none" stroke="#26a6cc" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
