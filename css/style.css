@@ -364,7 +364,6 @@ br.br640on {
   }
 }
 
-@media (max-width: 1700px) {
   #header {
     position: fixed;
     top: 0;
@@ -384,14 +383,21 @@ br.br640on {
   #header .logo {
     position: static;
   }
+
+  #header .logo a{
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+
 /*
   #header .logo p {
     display: none;
   }
 */
   #header .logo .logo-img {
-    width: 112px;
-    height: 30px;
+    width: 120px;
+    height: 35px;
   }
 
   #header nav {
@@ -736,7 +742,7 @@ br.br640on {
   left: 52%;
   top: 12%;
   transition: 1s ease-in-out;
-  opacity: 0;
+  opacity: 1;
   transform: translateY(50px);
 }
 
