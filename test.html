@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>GSAP Example</title>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            .sec-other {
+                width: 100%;
+                height: 100vh;
+            }
+            .last {
+                height: 200vh;
+                background: lightcyan;
+            }
+
+            /* sec-info */
+            .sec-info {
+                overflow: hidden;
+                color: white;
+            }
+            .parallax-item {
+                width: 100%;
+                height: 100vh;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .sec-item1 {
+                background-color: blanchedalmond;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .sec-item1 .txt-wrap {
+                width: 720px;
+            }
+            .sec-item2 {
+                background-image: url(./img/magazine_2.png);
+            }
+            .sec-item3 {
+                background-image: url(./img/magazine_3.png);
+            }
+            .sec-item4 {
+                background-image: url(./img/magazine_4.png);
+            }
+            .parallax-item-tit {
+                position: absolute;
+                top: 120px;
+                left: 180px;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="sec-info">
+          <div class="sec-item1 parallax-item">
+            <div class="txt-wrap">
+              <h2>Four Seasons’s Seoul</h2>
+              <strong>서울 심장부의 우아하고 스타일리시한 매력</strong>
+              <span class="under-line"></span>
+              <p>
+                  역사적인 왕궁 유적들 사이 유리와 철조로 지어진 건축물을 품은 서울은 전통적인 느낌이 물씬한
+                  동시에 미래 지향적인 감각이 가득한 역동적인 도시입니다. 바닥에서 천장까지 통유리가 설치된
+                  객실에서 밖을 내다보면, 서울의 역동적인 풍경이 한눈에 펼쳐집니다. 광화문에 위치한 현대적인
+                  감각의 포시즌스 호텔 서울은 포시즌스만의 서비스를 선보이는 특별한 공간입니다.
+              </p>
+            </div>
+            </div>
+            <!-- //section1 -->
+
+            <div class="sec-item2 parallax-item">
+                <h2 class="parallax-item-tit">
+                    조선<br />
+                    왕조의 향기
+                </h2>
+                <p>한국가구박물관에서 시간을 거스르는 여행을 즐겨보세요. 총 2,000여점이 넘는 한국의 전통 목가구들과 함께 한국의 전통 마당, 집을 둘러싼 자연의 조화로운 모습을 통하여 아름다운 한국의 주생활 문화를 감상하실 수 있습니다.</p>
+            </div>
+            <!-- //section2 -->
+
+            <div class="sec-item3 parallax-item"
+            >
+                <h2 class="parallax-item-tit">
+                    전통의 감성과 근대의 세련미,<br />
+                    현대의 힙함을 담아낸 한 잔
+                </h2>
+                <p>한국식 컨템퍼러리 바 ‘#오울(OUL)’ 은 전통 시대와 근대, 현대 등 다양한 시대 속 서울의 다이내믹한 밤 문화를 세련된 스타일로 선보입니다. 막걸리부터 소주, 와인, 맥주, 진까지 국내 주류와 식재료의 다채로운 변주를 기대해 주세요.</p>
+            </div>
+            <!-- //section3 -->
+
+            <div class="sec-item4 parallax-item"
+            >
+                <h2 class="parallax-item-tit">
+                    인터내셔널<br />
+                    딜라이트
+                </h2>
+                <p>서울의 중심부에서 세계적인 수준의 다이닝 경험과 매력적인 사교의 장을 선사하는 레스토랑과 바입니다.</p>
+            </div>
+        </section>
+
+        <script>
+            // ScrollTrigger
+            const panels = gsap.utils.toArray('.parallax-item');
+
+            panels.forEach((panel, i) => {
+                if (i !== panels.length - 1) {
+                    // 마지막 섹션이 아닌 경우에만 고정
+                    ScrollTrigger.create({
+                        trigger: panel,
+                        start: 'top top',
+                        pin: true,
+                        pinSpacing: false,
+                    });
+                }
+            });
+
+            // text animation
+            gsap.utils.toArray('.parallax-item-tit').forEach((item) => {
+                ScrollTrigger.create({
+                    trigger: item,
+                    start: 'top 80%',
+                    end: 'bottom 20%',
+                    onEnter: () => {
+                        animate(item);
+                    },
+                });
+
+                item.style.opacity = '0';
+            });
+
+            const animate = (item) => {
+                gsap.fromTo(
+                    item,
+                    { autoAlpha: 0, x: 0, y: 100 },
+                    { autoAlpha: 1, x: 0, y: 0, duration: 1.25, overwrite: 'auto', ease: 'expo' },
+                );
+            };
+
+            // lenis
+            const lenis = new Lenis();
+
+            lenis.on('scroll', (e) => {
+                console.log(e);
+            });
+
+            function raf(time) {
+                lenis.raf(time);
+                requestAnimationFrame(raf);
+            }
+
+            requestAnimationFrame(raf);
+        </script>
+    </body>
+</html>
