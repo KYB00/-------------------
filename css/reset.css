@@ -121,6 +121,99 @@ textarea {
 	resize: none;
 }
 
+// sec-info
+.parallax-item {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  color: $white;
+  background: no-repeat center / cover;
+
+  .sec-info-tit {
+    position: absolute;
+    top: 120px;
+    left: 180px;
+    h2 {
+      font-family: 'Pretendard', sans-serif;
+      font-weight: 600;
+    }
+  }
+  .sec-info-tit+p {
+    position: absolute;
+    bottom: 100px;
+    font-size: 20px;
+    word-break: keep-all;
+  }
+}
+.under-line {
+  display: block;
+  width: 64px;
+  height: 2px;
+  background: $white;
+}
+
+
+  
+.parallax-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  color: $white;
+  background: no-repeat center / cover;
+
+  .sec-info-tit {
+    position: absolute;
+    top: 120px;
+    left: 180px;
+    h2 {
+      font-family: 'Pretendard', sans-serif;
+      font-weight: 600;
+    }
+  }
+  .sec-info-tit+p {
+    position: absolute;
+    bottom: 100px;
+    font-size: 20px;
+    word-break: keep-all;
+  }
+}
+.under-line {
+  display: block;
+  width: 64px;
+  height: 2px;
+  background: $white;
+}
+
+  .sec-info-item2 {
+    background-image: url(../img/magazine_2.png);
+    p {
+      right: 124px;
+      width: 680px;
+    }
+  }
+  .sec-info-item3 {
+    background-image: url(../img/magazine_3.png);
+    p {
+      right: 140px;
+      width: 664px;
+    }
+  }
+  .sec-info-item4 {
+    background-image: url(../img/magazine_4.png);
+    p {
+      right: 166px;
+      width: 640px;
+    }
+  }
+
+.sec-info .sec-info-item1 .txt-wrap {
+    text-align: center;
+    width: 720px;
+    color: #fff;
+}
+
 /* 폰트 초기화 */
 html, body, div, input, textarea, select, button, table,
 label, h1, h2, h3, h4, h5, h6, p, li, a, strong, b {

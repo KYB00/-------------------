@@ -268,3 +268,26 @@ function leftScroll(){
       return false;
     }
 }
+
+// text animation
+  gsap.utils.toArray('.sec-info-tit').forEach((item) => {
+      ScrollTrigger.create({
+          trigger: item,
+          start: 'top 80%',
+          end: 'bottom 20%',
+          onEnter: () => {
+              animate(item);
+          },
+      });
+
+      item.style.opacity = '0';
+  });
+
+  const animate = (item) => {
+      gsap.fromTo(
+          item,
+          { autoAlpha: 0, x: 0, y: 100 },
+          { autoAlpha: 1, x: 0, y: 0, duration: 1.25, overwrite: 'auto', ease: 'expo' },
+      );
+  };
+  
